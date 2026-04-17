@@ -1,0 +1,552 @@
+/* сброс стилей */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+  font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type='file'] {
+  max-width: 100%;
+}
+
+
+
+
+.inter-text {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.mainText {
+    font-weight: bold;
+    font-size: 64px;
+    color: aliceblue;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+}
+
+
+.BookTag {
+    font-weight: bold;
+    font-size: 64px;
+    color: aliceblue;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    height: 49px;
+    margin: 10px;
+    font-weight: bold;
+    max-width: 617px;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+.main {
+    font-family: inter;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    height: 49px;
+    border-radius: 8px;
+    max-width: 617px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-color:rgba(180, 180, 180, 0.3s) ;
+    transition: 0.3s ease;
+    background-color: rgba(200, 200, 200, 0.005);
+    backdrop-filter: blur(3px);
+}
+
+
+button:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+
+li {
+    font-family: inter;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+    color: antiquewhite;
+}
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Опускает видео под все элементы */
+  object-fit: cover; /* Чтобы видео не растягивалось, а заполняло экран */
+}
+
+/* Убедитесь, что у основного контента прозрачный фон */
+body {
+  margin: 0;
+  background: none;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap; /* Чтобы карточки переносились на новую строку */
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+ul {
+    font-family: inter;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: antiquewhite;
+}
+.editButton {
+   font-family: inter;
+    color: rgb(255, 255, 255);
+    background-color: rgba(red, green, blue, alpha);
+    font-weight: bold;
+    height: 49px;
+    border-radius: 8px;
+    max-width: 617px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 150px;
+    transition: 0.3s ease;
+}
+
+.deleteButton {
+    font-family: inter;
+    color: rgb(255, 255, 255);
+    background-color: rgba(red, green, blue, alpha);
+    font-weight: bold;
+    height: 49px;
+    border-radius: 8px;
+    max-width: 617px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 150px;
+    transition: 0.3s ease;
+}
+
+.deleteButton:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.editButton:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.nameBook {
+  color: rgb(255, 255, 255);
+}
+
+.pagesCount {
+  color: #ffffff;
+}
+
+li {
+  margin: 3px;
+}
+
+.select {
+  color:#ffffff;
+  font-family: inter;
+  font-weight: bold;
+  position: relative;
+}
+.status-select:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  max-width: 617px;
+  height: 300px;
+  padding: 10px;
+  background-color: rgba(200, 200, 200, 0.005);
+  backdrop-filter: blur(3px);
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: width 0.4s ease;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.card-top-row {
+  color: #ffffff;
+  font-family: inter;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+.card-bottom-row {
+  color: #ffffff;
+  font-family: inter;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+
+.progress-text {
+  font-family: inter;
+}
+
+.status-select {
+   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: stretch;
+  text-align: center;
+  height: 49px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.status-select option {
+  color: black;
+}
+
+.cards-grid {
+  margin-top: 30px;
+}
+
+.addButton {
+  margin: 10px;
+}
+
+
+#finished-count {
+    font-weight: bold;
+    font-size: 64px;
+    color: aliceblue;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+}
+
+.stat-label {
+      font-weight: bold;
+    font-size: 64px;
+    color: aliceblue;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+}
+
+/* плавное скольжение снизу */
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Небольшой эффект всплытия снизу */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анимации появления */
+
+.main {
+  opacity: 0;
+    animation: fadeInPage 1.5s ease-in-out forwards;
+}
+
+.cards-grid {
+  opacity: 0;
+    animation: fadeInPage 1.5s ease-in-out forwards;
+}
+
+.BookTag {
+  opacity: 0;
+    animation: fadeInPage 1.5s ease-in-out forwards;
+}
+
+/* пояление плавное из космоса */
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        scale: 0.95;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.statistic {
+    font-weight: bold;
+    font-size: 64px;
+    color: aliceblue;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+      opacity: 0;
+    animation: fadeInPage 1.5s ease-in-out forwards;
+    margin-top: 30px;
+}
+
+.tracker-dashboard {
+    color: white;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    font-family: Inter;
+    margin-top: 30px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: rgba(200, 200, 200, 0.005s);
+    backdrop-filter: blur(3px);
+}
+
+.stat-card:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+
+/* Стили для целей и наград */
+.goals-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#daily-goal-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+    width: 250px;
+    text-align: center;
+    margin: 10px 0;
+    outline: none;
+}
+
+.awards-flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.award-item {
+    filter: grayscale(1);
+    opacity: 0.3;
+    animation: unlock 0.5s forwards;
+}
+
+@keyframes unlock {
+    to { filter: grayscale(0); opacity: 1; transform: scale(1.1); }
+}
+
+
+/* медиа-запросы для адаптации */
+/* Базовый стиль для больших экранов (ПК) */
+.main h1, .BookTag {
+    font-size: 3.5rem; /* Исходный размер */
+    transition: font-size 0.3s ease;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Для планшетов (ширина экрана меньше 1024px) */
+@media (max-width: 1024px) {
+    .main h1 {
+        font-size: 2.5rem;
+    }
+    .BookTag {
+        font-size: 2.5rem;
+    }
+    
+}
+
+/* Для мобильных телефонов (ширина экрана меньше 600px) */
+@media (max-width: 600px) {
+    .main h1 {
+        font-size: 1.8rem; /* Компактный размер для смартфонов */
+        padding: 0 10px;   /* Чтобы текст не прилипал к краям */
+    }
+    
+    /* Можно также уменьшить инпуты и кнопки в main, чтобы они не вылезали */
+     .main .addButton {
+        width: 90%; 
+        font-size: 14px;
+    }
+    .stats-grid, .goals-section {
+    display: flex;
+    flex-wrap: wrap; /* Чтобы карточки переносились на новую строку */
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    }
+}
