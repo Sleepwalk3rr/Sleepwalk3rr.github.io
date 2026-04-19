@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main page/main.css">
+    <link rel="icon" href="/site resources/icon-site.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Трекер</title>
+
+</head>
+<body>
+<video autoplay muted loop id="bg-video">
+  <source src="/site resources/background_stars.mp4" type="video/mp4">
+  Ваш браузер не поддерживает видео.
+</video>
+    <div class="main" id="main1">   
+    <h1 class="mainText">Трекер чтения книг</h1>
+    <input type="text" placeholder="Название книги..." class="inputName" id="input-name">
+    <input type="number" placeholder="Кол-во страниц..." class="InputPages" id="input-pages">
+    <input type="text" placeholder="Автор..." class="inputAuthor" id="input-author">
+    <button class="addButton" id="add-button">Добавить</button>
+    </div>
+
+    <h1 class="BookTag">Книги</h1>
+    </div>
+
+    <!-- Сюда JS будет добавлять карточки -->
+    <div id="container" class="cards-grid"></div>
+
+<div class="tracker-dashboard">
+    <!-- Блок целей -->
+    <div class="goals-section">
+        <div class="stat-card goal-card">
+            <span class="stat-label">Цель (стр/день)</span>
+            <input type="number" id="daily-goal-input" placeholder="0" onchange="updateGoal(this.value)">
+            <div class="goal-progress-info" id="goal-status">Цель не установлена</div>
+        </div>
+        
+        <div class="stat-card awards-card">
+            <span class="stat-label">Ваши награды</span>
+            <div id="awards-container" class="awards-flex">
+                <!-- Сюда JS добавит иконки наград -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок цифр -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-value" id="stats-day">0</span>
+            <span class="stat-label">За сегодня</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value" id="stats-week">0</span>
+            <span class="stat-label">За неделю</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value" id="stats-month">0</span>
+            <span class="stat-label">За месяц</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value" id="finished-count">0</span>
+            <span class="stat-label">Завершено</span>
+        </div>
+    </div>
+</div>
+
+ 
+
+
+
+
+    <script src="/main page/main.js" defer></script>
+</body>
+</html>
