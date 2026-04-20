@@ -19,7 +19,7 @@
     <div class="main" id="main1">   
     <h1 class="mainText">Трекер чтения книг</h1>
     <input type="text" placeholder="Название книги..." class="inputName" id="input-name">
-    <input type="number" placeholder="Кол-во страниц..." class="InputPages" id="input-pages">
+    <input type="number" placeholder="Кол-во страниц..." class="InputPages" id=input-pages min="0" oninput="this.value = Math.abs(this.value)">
     <input type="text" placeholder="Автор..." class="inputAuthor" id="input-author">
     <button class="addButton" id="add-button">Добавить</button>
     </div>
