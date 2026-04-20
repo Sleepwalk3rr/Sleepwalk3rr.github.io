@@ -266,3 +266,23 @@ function logReading(pagesRead) {
   renderStats();
 }
 
+// Запуск бэкграунд-видео для андроида
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('bg-video');
+    
+    // Пытаемся запустить видео программно
+    const playVideo = () => {
+        video.play().catch(error => {
+            console.log("Автоплей заблокирован браузером, ждем взаимодействия");
+        });
+    };
+
+    playVideo();
+
+    // Запасной вариант: видео запустится, как только пользователь коснется экрана
+    document.body.addEventListener('touchstart', function() {
+        if (video.paused) {
+            video.play();
+        }
+    }, { once: true });
+});
